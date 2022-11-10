@@ -1,19 +1,10 @@
 import torch
 import torch.nn as nn
-import torch.nn.utils.rnn as rnn_utils
-from torch.autograd import Variable
-
-import torch.nn.functional as F
-from torch.nn import TransformerEncoder, TransformerEncoderLayer
-from torch.nn import TransformerDecoder, TransformerDecoderLayer
 
 import pandas as pd
 import yaml
 import time
 import torch.optim as optim
-import math
-import numpy as np
-from sklearn.metrics import roc_auc_score
 
 from utils import train, evaluate, epoch_time
 from dataloader import TextLoader
